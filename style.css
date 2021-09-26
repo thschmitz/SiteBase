@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+.center{
+    display:flex;
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+section.main{
+    background-image: url("images/bg.svg");
+    background-position: center;
+    background-size: cover;
+    padding: 20px 0 80px 0;
+
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+}
+
+.logo-menu{
+    width: 50%;
+
+}
+
+.itens-menu{
+    width: 50%;
+}
+
+.itens-menu a{
+    font-weight: bold;
+    color:white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.itens-menu a:hover{
+    border-bottom: 2px solid #FFDD33;
+}
+
+.itens-menu a.contact-btn{
+    background-color: #0F3FD3;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.itens-menu a.contact-btn:hover{
+    border: 0;
+}
+
+.mockup{
+    display: block;
+    width: 100%;
+    color:white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.mockup h1{
+    font-size: 50px;
+}
+
+.mockup img{
+    max-width: 100%;
+}
+
+section.marcas{
+    padding: 100px 0;
+}
+
+section.marcas img{
+    width: 20%;
+    cursor:pointer;
+}
+
+section.porque-nos{
+    padding: 40px;
+    background-color: #FBFCFE;
+}
+
+section.porque-nos > .center > h2{
+    font-size: 64px;
+    text-align: center;
+    width: 100%;
+}
+
+section.porque-nos > .center > p{
+    font-size: 14px;
+    margin-bottom: 50px;
+    color: #7E92AC;
+    text-align: center;
+    width: 100%;
+}
+
+.diferenciais{
+    display:flex;
+    margin-top: 50px;
+}
+
+.box-diferenciais{
+    box-shadow: 0px 20px 40px #2426721C;
+    width: 31%;
+    margin-right: 2%;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.box-diferenciais img{
+    cursor:pointer;
+}
+
+.box-diferenciais h3{
+    font-size: 28px;
+    color: black;
+    margin: 20px 0;
+}
+
+.box-diferenciais p{
+    font-size: 13px;
+    color: #7E92AC;
+    margin-bottom: 100px;
+}
+
+section.cta{
+    background-image: url("images/BANNER\ IMG.svg");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 10px;
+    color:white;
+    text-align: center;
+}
+
+section.cta h2,
+section.cta h4{
+    font-weight: normal;
+    margin: 10px 0;
+    margin-bottom: 20px;
+}
+section.cta h2{
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+
+section.cta a{
+    display: inline-block;
+    padding: 8px 15px;
+    font-weight: bold;
+    background: #FFDD33;
+    font-size: 17px;
+    text-decoration: none;
+    color:#0F3FD3;
+    border-radius: 7px;
+}
+
+section.beneficios{
+    padding: 50px;
+}
+
+.lista-beneficios h1{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 50px;
+    margin-top: 110px;
+}
+
+.lista-beneficios{
+    width: 50%;
+}
+
+.lista-beneficios p{
+    vertical-align: middle;
+    font-size: 14px;
+    color: #7E92AC;
+}
+
+.lista-beneficios span{
+    display:inline-block;
+    width: calc(100% - 70px);
+}
+
+.lista-beneficios img{
+    width: 70px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.img-beneficios{
+    width:50%;
+}
+
+.img-beneficios img{
+    max-width: 100%;
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
+.lista-beneficios button{
+    padding:15px;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: #255AFF;
+    color:white;
+    border-radius: 10px;
+    font-size: 17px;
+    border:0px;
+    margin: 20px;
+}
+
+.depoimentos h1{
+    text-align: center;
+    font-size: 50px;
+    margin: 80px;
+    width: 100%
+}
+
+.container-slider{
+    display: flex;
+    width: 100%;
+    margin-bottom: 120px;
+
+}
+
+.container-slider-single{
+    box-shadow: 0px 20px 40px #2426721C;
+    width: 30%;
+    margin-right: 2%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display:inline-block;
+    text-align: center;
+}
+
+.container-slider-single h3{
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    color:black;
+}
+
+.container-slider-single h5{
+    color: #7E92AC;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top:-20px;
+    font-size: 15px;
+}
+
+.container-slider-single p{
+    color: #7E92AC;
+    text-align: center;
+}
+
+.container-slider-single img{
+    padding:20px
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+section.contato{
+    padding:40px 0;
+    text-align: center;
+}
+
+section.contato h1{
+    font-size: 50px;
+    margin-top: 120px;
+}
+
+section.contato form{
+    width: 100%;
+}
+
+input::placeholder{
+    color: #7E92AC;
+    font-style: bold;
+}
+
+.contato input[type="text"],
+.contato input[type="email"]
+{
+    color: #7E92AC;
+    width: 100%;
+    height:45px;
+    padding-left: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background: #FCFDFF;
+    border: 1px solid #C3CCE8;
+    font-weight: bold;
+}
+
+textarea::placeholder{
+    color: #7E92AC;
+}
+
+.contato textarea{
+    color: #7E92AC;
+    width: 100%;
+    height: 120px;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background: #FCFDFF;
+    border: 1px solid #C3CCE8;
+    resize: vertical;
+    font-weight: bold;
+}
+
+
+.contato input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 20px;
+    border-radius: 10px;
+    background: #FCFDFF;
+    border: 1px solid #C3CCE8;
+    resize: vertical;
+    background: #255AFF;
+    color:white;
+    font-style: arial;
+    cursor:pointer;
+    margin-bottom: 80px;
+    font-weight: bold;
+}
+
+footer{
+    padding:10px 0;
+    background-color: #255AFF;
+    color:white;
+}
+
+.text-footer{
+    width: 50%;
+    padding: 8px 0;
+}
+
+.itens-menu-mobile{
+    display:none;
+    text-align: right;
+    width: 50%;
+}
+
+.itens-menu-mobile i{
+    cursor: pointer;
+    color:white;
+    font-size: 23px;
+    position: relative;
+    top: 15px;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+@media screen and (max-width: 768px){
+    .itens-menu-mobile{
+        display:block;
+    }
+    
+    .menu-mobile{
+        opacity: 0;
+        transition: 1s;
+        position: absolute;
+        left:0;
+        top:70px;
+        background-color: white;
+        width: 100%;
+        padding:20px 0;
+        text-align: center;
+    }
+
+    .show{
+        opacity: 1;
+    }
+
+    .hide{
+        opacity: 0;
+    }
+
+    .menu-mobile a{
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+        color:rgb(40,40,40);
+        font-weight: bold;
+        text-decoration: none;
+        border-bottom:1px solid rgb(40,40,40);
+        padding: 8px 0;
+    }
+
+    section.main .itens-menu{
+        display:none;
+    }
+
+    footer .itens-menu{
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .itens-menu a{
+        display:block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .text-footer{
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .diferenciais{
+        flex-wrap: wrap;
+    }
+
+    .box-diferenciais{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    section.marcas > .center{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.marcas img{
+        max-width: 300px;
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 1150px){
+    .lista-beneficios, .img-beneficios{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .img-beneficios{
+        padding-right: 100px;
+    }
+    .lista-beneficios button{
+        display:inline-block;
+        margin-left: 80px;
+    }
+    
+}
